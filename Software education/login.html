@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <link rel="stylesheet" href="style2.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+  </head>
+
+  <body>
+    <section>
+      <div class="login-form">
+        <h1>Login</h1>
+        <h4>Username</h4>
+        <div class="username-input">
+          <i class="fas fa-user"></i>
+          <input type="email" id="username" placeholder="Type your username" />
+        </div>
+
+        <h4>Password</h4>
+        <div class="password-input">
+          <i class="fas fa-lock"></i>
+          <input
+            type="password"
+            id="password"
+            placeholder="Type Your Password"
+          />
+        </div>
+
+        <p>Forgot Password</p>
+
+        <button class="login-btn" onclick="func()">Login</button>
+      </div>
+
+      <!-- value valid or invalid -->
+
+      <!-- <div class="alternative-signup">
+            <p><span><Sign-up></Sign-up></span></p>
+        </div> -->
+    </section>
+
+    <script>
+      function func() {
+    
+        var email = document.getElementById("username").value;
+        var pass = document.getElementById("password").value;
+
+        if (email == "sahuarchana@gmail.com" && pass == "123456") {
+          alert("success fully !");
+          window.location.assign("course.html");
+        } else {
+          alert("Wrong entry invalid");
+        }
+      }
+    </script>
+  </body>
+</html>
